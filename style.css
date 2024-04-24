@@ -3,18 +3,24 @@ body {
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Section 1: Header and main title */
+
+.hero {
+  background-color: #1f2937;
+  color: #f9faf8;
 }
 
 .header {
-  background-color: #1f2937;
-  color: #f9faf8;
-  flex: 1;
-
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 100px;
+  padding: 15px 100px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -31,13 +37,11 @@ a {
 }
 
 .main {
-  background-color: #1f2937;
-  color: #f9faf8;
-  flex: 2.5;
-
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  align-items: center;
-  padding: 50px 100px;
+  align-items: top;
+  padding: 100px 100px;
   justify-content: space-between;
   gap: 20px;
 }
@@ -49,10 +53,11 @@ a {
 .main-left button {
   background-color: #3882f6;
   color: #f9faf8;
+  font-size: 20px;
   font-weight: 800;
   padding: 8px 24px;
   border-radius: 8px;
-  margin-top: 30px;
+  margin-top: 50px;
   border: none;
 }
 
@@ -61,6 +66,8 @@ a {
   font-weight: 900;
   padding-bottom: 10px;
 }
+
+/* Section 2: Random infos */
 
 .info {
   flex: 2;
@@ -92,6 +99,8 @@ a {
   padding-bottom: 30px;
 }
 
+/* Section 3: Quote*/
+
 .quote-container {
   flex: 2;
   padding: 50px 100px;
@@ -103,12 +112,11 @@ a {
 }
 
 .quote-container > div {
-  max-width: 630px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
 .quote {
-  /* max-width: 630px; */
   margin: 0 auto;
   font-size: 24px;
   color: #1f2937;
@@ -125,6 +133,8 @@ a {
   flex: 1.5;
   padding: 50px 100px;
 }
+
+/* Section 4: Signup */
 
 .signup {
   display: flex;
@@ -145,11 +155,12 @@ a {
   padding-bottom: 5px;
 }
 
+/* Section 5: Footer*/
+
 .footer {
   flex: 1;
   background-color: #1f2937;
   color: #e5e7eb;
-
   display: flex;
   justify-content: center;
   padding: 25px 100px;
@@ -187,6 +198,8 @@ button {
   font-size: 18px;
   color: #e5e7eb;
 }
+
+/* Media queries for responsiveness */
 
 @media (width<750px) {
   .main {
